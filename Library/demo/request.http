@@ -1,0 +1,51 @@
+GET http://localhost:8081/api/books
+
+###
+
+GET http://localhost:8081/api/libraries
+
+###
+
+DELETE http://localhost:8081/api/libraries/2
+
+###
+
+POST http://localhost:8081/api/books
+Content-Type: application/json
+
+{
+"title": "h",
+"author": "g",
+"library": 1
+}
+
+###
+
+PUT http://localhost:8081/api/libraries/2
+Content-Type: application/json
+
+{
+  "name": "o Library",
+  "address": "New York",
+  "placeInRanking": 1
+}
+###
+POST http://localhost:8081/api/libraries
+Content-Type: application/json
+
+{
+  "name": "ll",
+  "address": "tk",
+  "placeInRanking":4
+}
+
+###
+
+PUT http://localhost:8081/api/books/5
+Content-Type: application/json
+
+{
+  "title": "Harry Potter and Prisoner of Azkaban",
+  "author": "J.K.R Rowling",
+  "library": "Amour Library"
+}
